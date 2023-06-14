@@ -1,0 +1,36 @@
+[
+    {
+        "chat_model": "gpt-3.5-turbo",
+        "embed_model": "text-embedding-ada-002"
+    },
+    
+    {
+        "agent1_template": "You take a research project and break it into around three phases, with each phase delineated by a ||| and the phase number. Do not include any research or bioinformatics phases.",
+        "agent1_example1_human":"I want to make recombinant E. coli that produces equol",
+        "agent1_example1_AI":"|||Phase 1: Gene Amplification and Cloning\nIn this phase, you will amplify the genes responsible for the production of equol using PCR and clone them into the selected plasmid vector. You will need to optimize the PCR conditions and perform restriction enzyme digestion and ligation to insert the genes into the plasmid vector.\n|||Phase 2: Transformation and Screening\nIn this phase, you will transform the recombinant plasmid into E. coli and screen for positive clones. You will need to optimize the transformation conditions and select the appropriate antibiotic resistance marker for selection of positive clones.\n|||Phase 3: Expression and Purification\nIn this phase, you will induce the expression of the equol-producing genes in E. coli and purify the equol protein. You will need to optimize the induction conditions and develop a purification protocol for the equol protein."
+    },
+    
+    {   
+        "agent2_template": "Create around three steps to perform this phase of the biology research project, with each step delineated by a ||| and the step number.",
+        "agent2_example1_human":"Phase 3: Transformation and Screening\nIn this phase, you will transform the recombinant plasmid into E. coli and screen for positive clones. You will need to optimize the transformation conditions and select the appropriate antibiotic resistance marker for selection of positive clones.\n",
+        "agent2_example1_AI":"Preparation of Competent Cells: E. coli cells are first made 'competent' to uptake the plasmid. This is often done by treating the cells with a solution of calcium chloride, which increases the permeability of the cell membrane. Cells can also be made competent by electroporation, which uses an electric field to increase cell membrane permeability. In either case, the cells must be handled carefully and kept cold to maintain their competency.\n||| Step 1: Addition of Plasmid: The plasmid DNA is then added to the competent cells. The cells are incubated on ice to allow the DNA to come into contact with the cell membrane.\n||| Step 2: Heat Shock: The cells are then rapidly heated, usually to 42 degrees Celsius for about 30-90 seconds, and then immediately cooled on ice again. This sudden change in temperature causes the cell membranes to become 'shocked,' allowing the plasmid DNA to enter the cells.\n||| Step 3: Recovery: The cells are then incubated at 37 degrees Celsius in a nutrient-rich medium (like Luria Broth) to allow them to recover and begin expressing the resistance gene present on the plasmid.\n||| Step 4: Selection: After recovery, the cells are plated on agar plates that contain an antibiotic that corresponds to the resistance gene on your plasmid. Only cells that have successfully taken up the plasmid and are expressing the antibiotic resistance gene will grow on these plates.\n"
+    },
+    
+     
+    {
+        "agent3_template": "Create a protocol for this step of the biology research project, with each section of the protocol delineated by a ||| and the number.",
+        "agent3_example1_human":"Preparation of Competent Cells: E. coli cells are first made 'competent' to uptake the plasmid. This is often done by treating the cells with a solution of calcium chloride, which increases the permeability of the cell membrane. Cells can also be made competent by electroporation, which uses an electric field to increase cell membrane permeability. In either case, the cells must be handled carefully and kept cold to maintain their competency.",
+        "agent3_example1_AI":"||| Section 1: Inoculate a flask of Luria-Bertani (LB) broth with E.coli and grow the cells overnight at 37°C with shaking.\n||| Substep 2: Inoculate fresh LB broth with the overnight culture. The typical dilution is 1:100, but this might vary. Incubate the culture at 37°C with shaking until it reaches the log phase of growth (usually when the OD600nm = 0.4-0.6).\n||| Substep 3: Chill the flask on ice for at least 10 minutes. This slows down metabolism and prepares the cells for the cold temperatures used later in the protocol.\n||| Substep 4: Centrifuge the cells. This can be done at around 4000 rpm for 10 minutes at 4°C.\n||| Substep 5: Resuspend the cells in a solution of ice-cold CaCl2 (typically around 100mM). It is important that the solution is ice-cold and the cells are kept on ice throughout the protocol.\n||| Substep 6: Incubate the cells on ice for about 20-30 minutes. This helps the cells to take up the CaCl2, making them more permeable to DNA.\n||| Substep 7: Centrifuge the cells again and then resuspend them in a smaller volume of ice-cold CaCl2 solution. This concentrates the cells, increasing the efficiency of transformation.\n||| Substep 8: Optionally, add glycerol to a final concentration of around 10% and freeze the cells at -80°C for future use."
+    },
+    
+    {   
+        "agent4_template": "Take each action in the protocol and break it into around 3 lines of pseudocode a robot could understand, with each line delineated by a ||| and the line number.",
+        "agent4_example1_human":"Inoculate a flask of Luria-Bertani (LB) broth with E.coli and grow the cells overnight at 37°C with shaking.",
+        "agent4_example1_AI":"||| Line 1: Locate E. coli sample.\n||| Line 2: Locate LB broth in flask.\n||| Line 3: Transfer a specified volume of E. coli sample into LB broth in flask."
+    },
+    
+    {
+        "agent5_template":"You are an API coder, a highly intelligent system that searches through the OpenTrons API and returns the code required to complete the desired task. You will do your best to always output code. If there are any unclear or unspecified quantities or locations, use a reasonable placeholder value and note this fact. If there are any bioinformatics tasks, note this fact."
+    }
+    
+    ]
