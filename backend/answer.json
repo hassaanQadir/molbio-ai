@@ -1,385 +1,385 @@
 {
-    "Phase 1: Gene Selection and Cloning\nIn this phase, you will select the genes responsible for bioluminescence and clone them into the E. coli genome. You will need to identify and isolate the genes from bioluminescent organisms, such as fireflies or bacteria, and design primers for PCR amplification. Once amplified, the genes will be ligated into a suitable plasmid vector for cloning into E. coli.\n\n": {
-        " Step 1: Gene Identification and Isolation\nStart by identifying and isolating the genes responsible for bioluminescence from a bioluminescent organism, such as fireflies or bacteria. This can be done by conducting a literature search to find known bioluminescent genes or by using molecular techniques like PCR or DNA sequencing to identify novel bioluminescent genes. Once identified, isolate the genes from the organism's genomic DNA using techniques like DNA extraction and purification.\n\n": {
+    "Phase 1: Gene Selection and Cloning\nIn this phase, you will select the genes responsible for bioluminescence and clone them into the E. coli genome. You will need to identify and isolate the genes from a bioluminescent organism, such as a firefly or jellyfish, and design primers for PCR amplification. Once amplified, the genes will be ligated into a suitable plasmid vector for cloning into E. coli.\n\n": {
+        " Step 1: Gene Identification and Isolation\nStart by identifying and isolating the genes responsible for bioluminescence from a bioluminescent organism, such as a firefly or jellyfish. This can be done by conducting a literature search to identify known bioluminescent genes or by using molecular biology techniques like PCR or DNA sequencing to identify novel bioluminescent genes. Once identified, isolate the DNA containing the bioluminescent genes using techniques like DNA extraction or PCR amplification.\n\n": {
             " Substep 1: Conduct a literature search to identify known bioluminescent genes or design primers for PCR amplification of potential bioluminescent genes.\n": [
                 " Line 1: Access literature database.\n",
                 " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+                " Line 3: Identify known bioluminescent genes or design primers for PCR amplification."
             ],
-            " Substep 2: Obtain a bioluminescent organism and collect a sample for DNA extraction. This can be done by culturing bacteria or collecting tissue samples from larger organisms.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 2: If using PCR, set up PCR reactions using the isolated genomic DNA or cDNA as a template and the designed primers specific to the bioluminescent genes.\n": [
+                " Line 1: Locate isolated genomic DNA or cDNA sample.\n",
+                " Line 2: Locate PCR reaction components (primers, nucleotides, polymerase, buffer).\n",
+                " Line 3: Mix the isolated genomic DNA or cDNA with the PCR reaction components, including the designed primers specific to the bioluminescent genes."
             ],
-            " Substep 3: Perform DNA extraction using a suitable method, such as phenol-chloroform extraction or a commercial DNA extraction kit, to isolate genomic DNA from the sample.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 3: Perform PCR amplification using appropriate cycling conditions to amplify the target genes.\n": [
+                " Line 1: Set up PCR reaction mixture with appropriate components (template DNA, primers, dNTPs, polymerase, buffer).\n",
+                " Line 2: Set PCR cycling conditions (denaturation, annealing, extension temperatures and times).\n",
+                " Line 3: Run PCR cycling program for specified number of cycles."
             ],
-            " Substep 4: Quantify the extracted DNA using a spectrophotometer or fluorometer to determine the concentration and purity of the DNA.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 4: Analyze the PCR products by agarose gel electrophoresis to confirm the presence of the desired gene fragments.\n": [
+                " Line 1: Prepare agarose gel with appropriate concentration.\n",
+                " Line 2: Load PCR products onto the gel wells.\n",
+                " Line 3: Apply electric current to run gel and separate DNA fragments."
             ],
-            " Substep 5: Set up PCR reactions using the isolated genomic DNA as a template and the designed primers specific to the bioluminescent genes of interest. Amplify the target genes through PCR.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 5: If using DNA sequencing, prepare the PCR products for sequencing by purifying them using a DNA purification kit.\n": [
+                " Line 1: Check if DNA sequencing is being used.\n",
+                " Line 2: Locate PCR products.\n",
+                " Line 3: Use a DNA purification kit to purify the PCR products."
             ],
-            " Substep 6: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Visualize the DNA bands under UV light.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 6: Submit the purified PCR products for DNA sequencing or perform DNA sequencing in-house using appropriate sequencing methods.\n": [
+                " Line 1: Prepare purified PCR products for DNA sequencing.\n",
+                " Line 2: Submit purified PCR products to external DNA sequencing service.\n",
+                " Line 3: Follow appropriate sequencing methods for in-house DNA sequencing."
             ],
-            " Substep 7: Purify the PCR products using a DNA purification kit to remove any contaminants or unincorporated primers.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 7: Analyze the DNA sequencing results to confirm the presence of the desired bioluminescent genes.\n": [
+                " Line 1: Retrieve DNA sequencing results.\n",
+                " Line 2: Compare sequencing results with desired bioluminescent genes.\n",
+                " Line 3: Confirm presence of desired bioluminescent genes based on sequencing analysis."
             ],
-            " Substep 8: Optionally, perform DNA sequencing on the purified PCR products to confirm the identity of the bioluminescent genes or to obtain the complete sequence for further analysis.": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 8: Isolate the DNA containing the bioluminescent genes using techniques like DNA extraction or gel extraction, depending on the downstream applications.": [
+                " Line 1: Prepare DNA extraction reagents and equipment.\n",
+                " Line 2: Perform DNA extraction or gel extraction based on downstream applications.\n",
+                " Line 3: Collect the isolated DNA containing the bioluminescent genes."
             ]
         },
-        " Step 2: Primer Design and PCR Amplification\nDesign primers specific to the identified bioluminescent genes. These primers should flank the target gene and have sequences that are complementary to the gene's DNA sequence. Use these primers in a PCR reaction to amplify the bioluminescent genes from the isolated genomic DNA. Optimize the PCR conditions, including annealing temperature and cycle number, to ensure efficient and specific amplification of the target genes.\n\n": {
-            " Substep 1: Conduct a literature search to identify known bioluminescent genes or design primers for PCR amplification of potential bioluminescent genes.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+        " Step 2: Primer Design and PCR Amplification\nDesign primers specific to the bioluminescent genes for PCR amplification. These primers should have complementary sequences to the target genes and include restriction enzyme recognition sites for subsequent cloning steps. Use the isolated DNA as a template for PCR amplification, following standard PCR protocols. Amplify the bioluminescent genes to obtain a sufficient amount of DNA for subsequent cloning steps.\n\n": {
+            " Substep 1: Identify the target bioluminescent genes and their corresponding DNA sequences.\n": [
+                " Line 1: Retrieve the bioluminescent organism's genetic information.\n",
+                " Line 2: Identify the specific genes responsible for bioluminescence.\n",
+                " Line 3: Record the DNA sequences corresponding to the target bioluminescent genes."
             ],
-            " Substep 2: Obtain a bioluminescent organism and collect a sample for DNA extraction. This can be done by culturing bacteria or collecting tissue samples from larger organisms.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 2: Design primers specific to the target genes using a primer design software or online tool. Ensure that the primers have complementary sequences to the target genes and include restriction enzyme recognition sites for cloning purposes.\n": [
+                " Line 1: Access primer design software or online tool.\n",
+                " Line 2: Input target gene sequences.\n",
+                " Line 3: Generate primers with complementary sequences to target genes and include restriction enzyme recognition sites."
             ],
-            " Substep 3: Perform DNA extraction using a suitable method, such as phenol-chloroform extraction or a commercial DNA extraction kit, to isolate genomic DNA from the sample.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 3: Order the designed primers from a reputable supplier.\n": [
+                " Line 1: Access reputable supplier's website.\n",
+                " Line 2: Search for designed primers using specific primer sequences.\n",
+                " Line 3: Place an order for the designed primers."
             ],
-            " Substep 4: Quantify the extracted DNA using a spectrophotometer or fluorometer to determine the concentration and purity of the DNA.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 4: Prepare the PCR reaction mix according to the manufacturer's instructions. Include the template DNA (isolated DNA), forward and reverse primers, dNTPs, DNA polymerase, and appropriate buffer.\n": [
+                " Line 1: Retrieve PCR reaction mix components (template DNA, forward and reverse primers, dNTPs, DNA polymerase, and buffer).\n",
+                " Line 2: Follow manufacturer's instructions to determine the required amounts of each component.\n",
+                " Line 3: Combine the determined amounts of each component to prepare the PCR reaction mix."
             ],
-            " Substep 5: Set up PCR reactions using the isolated genomic DNA as a template and the designed primers specific to the bioluminescent genes of interest. Amplify the target genes through PCR.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 5: Set up the PCR reaction by adding the reaction mix to PCR tubes or plates, ensuring proper labeling.\n": [
+                " Line 1: Locate PCR reaction mix.\n",
+                " Line 2: Locate PCR tubes or plates.\n",
+                " Line 3: Add PCR reaction mix to PCR tubes or plates and label them appropriately."
             ],
-            " Substep 6: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Visualize the DNA bands under UV light.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 6: Perform PCR amplification using a thermal cycler. Follow the standard PCR protocol, including denaturation, annealing, and extension steps. The number of cycles and annealing temperature may vary depending on the specific primers and target genes.\n": [
+                " Line 1: Locate PCR reaction mixture.\n",
+                " Line 2: Set thermal cycler to specified denaturation temperature and time.\n",
+                " Line 3: Set thermal cycler to specified annealing temperature and time, followed by extension temperature and time."
             ],
-            " Substep 7: Purify the PCR products using a DNA purification kit to remove any contaminants or unincorporated primers.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 7: Analyze the PCR products by running an agarose gel electrophoresis. Visualize the amplified DNA bands under UV light.\n": [
+                " Line 1: Prepare agarose gel with appropriate concentration.\n",
+                " Line 2: Load PCR products onto the gel wells.\n",
+                " Line 3: Run gel electrophoresis at specified voltage and time."
             ],
-            " Substep 8: Optionally, perform DNA sequencing on the purified PCR products to confirm the identity of the bioluminescent genes or to obtain the complete sequence for further analysis.": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 8: Purify the PCR products using a DNA purification kit, following the manufacturer's instructions. This will remove any remaining primers, nucleotides, and enzymes, obtaining a sufficient amount of purified DNA for subsequent cloning steps.": [
+                " Line 1: Locate DNA purification kit.\n",
+                " Line 2: Follow manufacturer's instructions for DNA purification.\n",
+                " Line 3: Perform purification steps to remove primers, nucleotides, and enzymes from PCR products."
             ]
         },
-        " Step 3: Ligation into Plasmid Vector\nAfter PCR amplification, purify the amplified bioluminescent genes using techniques like gel electrophoresis or PCR purification kits. Next, ligate the purified genes into a suitable plasmid vector using DNA ligase. The plasmid vector should have features like a selectable marker (e.g., antibiotic resistance gene) and an origin of replication for replication in E. coli. Transform the ligated plasmid into E. coli cells using methods like heat shock or electroporation to create recombinant E. coli strains containing the bioluminescent genes.": {
-            " Substep 1: Conduct a literature search to identify known bioluminescent genes or design primers for PCR amplification of potential bioluminescent genes.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+        " Step 3: Ligation into Plasmid Vector\nLigate the PCR-amplified bioluminescent genes into a suitable plasmid vector for cloning into E. coli. Choose a plasmid vector that contains the necessary elements for replication, selection, and expression of the cloned genes. Use restriction enzymes to digest both the PCR-amplified genes and the plasmid vector, creating compatible ends for ligation. Mix the digested genes and vector together with DNA ligase enzyme to facilitate the ligation reaction. Transform the ligated plasmid into E. coli cells for propagation and further analysis.": {
+            " Substep 1: Prepare the PCR-amplified bioluminescent genes and the plasmid vector for ligation. Ensure that the genes and vector are purified and free from contaminants.\n": [
+                " Line 1: Locate PCR-amplified bioluminescent genes.\n",
+                " Line 2: Locate plasmid vector.\n",
+                " Line 3: Purify and check for contaminants in the PCR-amplified bioluminescent genes and plasmid vector."
             ],
-            " Substep 2: Obtain a bioluminescent organism and collect a sample for DNA extraction. This can be done by culturing bacteria or collecting tissue samples from larger organisms.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 2: Digest the PCR-amplified genes and the plasmid vector using appropriate restriction enzymes. Choose enzymes that will create compatible ends for ligation.\n": [
+                " Line 1: Locate PCR-amplified genes.\n",
+                " Line 2: Locate plasmid vector.\n",
+                " Line 3: Digest PCR-amplified genes and plasmid vector using appropriate restriction enzymes."
             ],
-            " Substep 3: Perform DNA extraction using a suitable method, such as phenol-chloroform extraction or a commercial DNA extraction kit, to isolate genomic DNA from the sample.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 3: Inactivate the restriction enzymes by heat inactivation or by adding an appropriate enzyme inactivation buffer.\n": [
+                " Line 1: Determine if heat inactivation or enzyme inactivation buffer is required.\n",
+                " Line 2: If heat inactivation is required, heat the reaction mixture to the specified temperature for the specified duration.\n",
+                " Line 3: If enzyme inactivation buffer is required, add the specified volume of the buffer to the reaction mixture and incubate for the specified duration."
             ],
-            " Substep 4: Quantify the extracted DNA using a spectrophotometer or fluorometer to determine the concentration and purity of the DNA.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 4: Mix the digested genes and plasmid vector together in a suitable ratio. The ratio may vary depending on the desired insert-to-vector ratio.\n": [
+                " Line 1: Locate digested genes.\n",
+                " Line 2: Locate plasmid vector.\n",
+                " Line 3: Mix digested genes and plasmid vector together in a suitable ratio."
             ],
-            " Substep 5: Set up PCR reactions using the isolated genomic DNA as a template and the designed primers specific to the bioluminescent genes of interest. Amplify the target genes through PCR.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 5: Add DNA ligase enzyme to the mixture and incubate at an appropriate temperature for ligation to occur. Follow the manufacturer's instructions for the optimal conditions.\n": [
+                " Line 1: Locate DNA ligase enzyme.\n",
+                " Line 2: Add DNA ligase enzyme to the mixture.\n",
+                " Line 3: Incubate the mixture at the specified temperature according to manufacturer's instructions."
             ],
-            " Substep 6: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Visualize the DNA bands under UV light.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 6: After the ligation reaction, add an appropriate volume of transformation buffer to the ligated DNA mixture.\n": [
+                " Line 1: Locate ligation reaction mixture.\n",
+                " Line 2: Locate transformation buffer.\n",
+                " Line 3: Add a specified volume of transformation buffer to the ligation reaction mixture."
             ],
-            " Substep 7: Purify the PCR products using a DNA purification kit to remove any contaminants or unincorporated primers.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 7: Transform the ligated plasmid into competent E. coli cells using a suitable transformation method, such as heat shock or electroporation.\n": [
+                " Line 1: Locate ligated plasmid.\n",
+                " Line 2: Locate competent E. coli cells.\n",
+                " Line 3: Perform heat shock or electroporation on competent E. coli cells using the ligated plasmid."
             ],
-            " Substep 8: Optionally, perform DNA sequencing on the purified PCR products to confirm the identity of the bioluminescent genes or to obtain the complete sequence for further analysis.": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 8: Plate the transformed cells onto selective agar plates containing the appropriate antibiotic for selection of cells containing the ligated plasmid. Incubate the plates overnight at the appropriate temperature for E. coli growth.": [
+                " Line 1: Locate transformed cells.\n",
+                " Line 2: Locate selective agar plates.\n",
+                " Line 3: Spread transformed cells onto selective agar plates containing appropriate antibiotic."
             ]
         }
     },
     "Phase 2: Transformation and Screening\nIn this phase, you will transform the recombinant plasmid carrying the bioluminescent genes into E. coli and screen for positive clones. You will need to optimize the transformation conditions and select the appropriate antibiotic resistance marker for selection of positive clones. Positive clones will exhibit bioluminescence under specific conditions.\n\n": {
-        " Step 1: Gene Identification and Isolation\nStart by identifying and isolating the genes responsible for bioluminescence from a bioluminescent organism, such as fireflies or bacteria. This can be done by conducting a literature search to find known bioluminescent genes or by using molecular techniques like PCR or DNA sequencing to identify novel bioluminescent genes. Once identified, isolate the genes from the organism's genomic DNA using techniques like DNA extraction and purification.\n\n": {
-            " Substep 1: Conduct a literature search to identify known bioluminescent genes or design primers for PCR amplification of potential bioluminescent genes.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+        " Step 1: Plasmid Transformation\nPrepare competent E. coli cells by growing them to mid-log phase and treating them with calcium chloride or electroporation to increase their ability to take up DNA. Mix the recombinant plasmid carrying the bioluminescent genes with the competent E. coli cells. Incubate the mixture on ice for 30 minutes, then heat-shock at 42\u00b0C for 90 seconds. Immediately cool the mixture on ice for 2 minutes.\n": {
+            " Substep 1: Inoculate a flask of LB broth with E. coli and grow the cells at 37\u00b0C with shaking until they reach mid-log phase (OD600nm = 0.4-0.6).\n": [
+                " Line 1: Locate E. coli sample.\n",
+                " Line 2: Locate LB broth in flask.\n",
+                " Line 3: Transfer a specified volume of E. coli sample into LB broth in flask.\n\n"
             ],
-            " Substep 2: Obtain a bioluminescent organism and collect a sample for DNA extraction. This can be done by culturing bacteria or collecting tissue samples from larger organisms.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 2: Prepare competent cells by either treating them with calcium chloride or electroporation, following the established protocols.\n": [
+                " Line 1: Set incubation temperature to 37\u00b0C.\n",
+                " Line 2: Set shaking speed to specified value.\n",
+                " Line 3: Monitor OD600nm until it reaches 0.4-0.6."
             ],
-            " Substep 3: Perform DNA extraction using a suitable method, such as phenol-chloroform extraction or a commercial DNA extraction kit, to isolate genomic DNA from the sample.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 3: Mix the recombinant plasmid carrying the bioluminescent genes with the competent E. coli cells. The ratio of plasmid to cells can vary depending on the experiment.\n": [
+                " Line 1: Determine if calcium chloride treatment or electroporation is required.\n",
+                " Line 2: If calcium chloride treatment is required, follow calcium chloride treatment protocol.\n",
+                " Line 3: If electroporation is required, follow electroporation protocol."
             ],
-            " Substep 4: Quantify the extracted DNA using a spectrophotometer or fluorometer to determine the concentration and purity of the DNA.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 4: Incubate the mixture on ice for 30 minutes. This allows the plasmid to bind to the competent cells.\n": [
+                " Line 1: Locate recombinant plasmid carrying bioluminescent genes.\n",
+                " Line 2: Locate competent E. coli cells.\n",
+                " Line 3: Mix a specified ratio of plasmid to cells."
             ],
-            " Substep 5: Set up PCR reactions using the isolated genomic DNA as a template and the designed primers specific to the bioluminescent genes of interest. Amplify the target genes through PCR.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 5: Heat-shock the mixture at 42\u00b0C for 90 seconds. This sudden temperature change promotes the uptake of the plasmid by the cells.\n": [
+                " Line 1: Set temperature to 0\u00b0C.\n",
+                " Line 2: Place mixture on a cooling surface.\n",
+                " Line 3: Wait for 30 minutes."
             ],
-            " Substep 6: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Visualize the DNA bands under UV light.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 6: Immediately cool the mixture on ice for 2 minutes. This helps stabilize the cells and prevent them from dying due to the heat shock.\n": [
+                " Line 1: Set the temperature of the heat source to 42\u00b0C.\n",
+                " Line 2: Place the mixture in the heat source for 90 seconds.\n",
+                " Line 3: Monitor the temperature and time to ensure the correct conditions are maintained."
             ],
-            " Substep 7: Purify the PCR products using a DNA purification kit to remove any contaminants or unincorporated primers.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 7: Optionally, add a recovery medium (such as SOC or LB broth) to the mixture and incubate it at 37\u00b0C with shaking for 1-2 hours. This allows the cells to recover and express the bioluminescent genes.\n": [
+                " Line 1: Prepare an ice bath.\n",
+                " Line 2: Transfer the mixture into a container placed in the ice bath.\n",
+                " Line 3: Allow the mixture to cool for 2 minutes."
             ],
-            " Substep 8: Optionally, perform DNA sequencing on the purified PCR products to confirm the identity of the bioluminescent genes or to obtain the complete sequence for further analysis.": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 8: Plate the transformed cells onto selective agar plates containing appropriate antibiotics or selective markers, and incubate them overnight at 37\u00b0C. This allows the transformed cells to form colonies, indicating successful transformation.": [
+                " Line 1: Locate recovery medium (e.g., SOC or LB broth).\n",
+                " Line 2: Add a specified volume of recovery medium to the mixture.\n",
+                " Line 3: Incubate the mixture at 37\u00b0C with shaking for 1-2 hours."
             ]
         },
-        " Step 2: Primer Design and PCR Amplification\nDesign primers specific to the identified bioluminescent genes. These primers should flank the target gene and have sequences that are complementary to the gene's DNA sequence. Use these primers in a PCR reaction to amplify the bioluminescent genes from the isolated genomic DNA. Optimize the PCR conditions, including annealing temperature and cycle number, to ensure efficient and specific amplification of the target genes.\n\n": {
-            " Substep 1: Conduct a literature search to identify known bioluminescent genes or design primers for PCR amplification of potential bioluminescent genes.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+        " Step 2: Recovery and Plating\nAdd a suitable recovery medium, such as SOC (Super Optimal broth with Catabolite repression), to the transformed cells and incubate them at 37\u00b0C for 1 hour. This allows the cells to recover and express the antibiotic resistance gene present in the plasmid. After recovery, spread the transformed cells onto agar plates containing the appropriate antibiotic, such as ampicillin or kanamycin, and incubate the plates overnight at 37\u00b0C.\n": {
+            " Substep 1: Prepare SOC medium by adding the appropriate amount of SOC powder to distilled water according to the manufacturer's instructions. Autoclave the medium to sterilize it.\n": [
+                " Line 1: Locate transformed cells.\n",
+                " Line 2: Locate selective agar plates.\n",
+                " Line 3: Transfer transformed cells onto selective agar plates and incubate at 37\u00b0C overnight."
             ],
-            " Substep 2: Obtain a bioluminescent organism and collect a sample for DNA extraction. This can be done by culturing bacteria or collecting tissue samples from larger organisms.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 2: After the incubation of the transformed cells with the plasmid, add an appropriate volume of SOC medium to the transformation mixture. The volume will depend on the concentration of cells and the desired cell density for plating.\n": [
+                " Line 1: Locate SOC powder.\n",
+                " Line 2: Measure and add the appropriate amount of SOC powder to distilled water.\n",
+                " Line 3: Autoclave the medium to sterilize it."
             ],
-            " Substep 3: Perform DNA extraction using a suitable method, such as phenol-chloroform extraction or a commercial DNA extraction kit, to isolate genomic DNA from the sample.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 3: Incubate the cells in the SOC medium at 37\u00b0C for 1 hour. This allows the cells to recover and express the antibiotic resistance gene present in the plasmid.\n": [
+                " Line 1: Locate SOC medium.\n",
+                " Line 2: Calculate appropriate volume of SOC medium based on cell concentration and desired cell density.\n",
+                " Line 3: Add calculated volume of SOC medium to the transformation mixture."
             ],
-            " Substep 4: Quantify the extracted DNA using a spectrophotometer or fluorometer to determine the concentration and purity of the DNA.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 4: While the cells are incubating, prepare agar plates containing the appropriate antibiotic, such as ampicillin or kanamycin, according to the manufacturer's instructions.\n": [
+                " Line 1: Locate SOC medium.\n",
+                " Line 2: Transfer the cells into the SOC medium.\n",
+                " Line 3: Set the incubation temperature to 37\u00b0C and the duration to 1 hour."
             ],
-            " Substep 5: Set up PCR reactions using the isolated genomic DNA as a template and the designed primers specific to the bioluminescent genes of interest. Amplify the target genes through PCR.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 5: After the 1-hour incubation, spread an appropriate volume of the transformed cells onto the agar plates using a sterile spreader or glass rod. Spread the cells evenly over the surface of the agar.\n": [
+                " Line 1: Locate agar plates.\n",
+                " Line 2: Follow manufacturer's instructions to prepare agar plates with appropriate antibiotic.\n",
+                " Line 3: Set aside prepared agar plates for later use."
             ],
-            " Substep 6: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Visualize the DNA bands under UV light.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 6: Incubate the plates overnight at 37\u00b0C. This allows the transformed cells to grow and form colonies on the agar plates.\n": [
+                " Line 1: Locate agar plates.\n",
+                " Line 2: Obtain sterile spreader or glass rod.\n",
+                " Line 3: Spread a specified volume of transformed cells evenly over the surface of the agar plates."
             ],
-            " Substep 7: Purify the PCR products using a DNA purification kit to remove any contaminants or unincorporated primers.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 7: After overnight incubation, examine the plates for the presence of colonies. Count the number of colonies if necessary.\n": [
+                " Line 1: Set incubation temperature to 37\u00b0C.\n",
+                " Line 2: Place plates in incubator.\n",
+                " Line 3: Set incubation time to overnight."
             ],
-            " Substep 8: Optionally, perform DNA sequencing on the purified PCR products to confirm the identity of the bioluminescent genes or to obtain the complete sequence for further analysis.": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 8: Store the plates at 4\u00b0C for further analysis or use the colonies for downstream experiments.": [
+                " Line 1: Locate incubator.\n",
+                " Line 2: Set incubator temperature to 37\u00b0C.\n",
+                " Line 3: Set incubator timer for overnight incubation."
             ]
         },
-        " Step 3: Ligation into Plasmid Vector\nAfter PCR amplification, purify the amplified bioluminescent genes using techniques like gel electrophoresis or PCR purification kits. Next, ligate the purified genes into a suitable plasmid vector using DNA ligase. The plasmid vector should have features like a selectable marker (e.g., antibiotic resistance gene) and an origin of replication for replication in E. coli. Transform the ligated plasmid into E. coli cells using methods like heat shock or electroporation to create recombinant E. coli strains containing the bioluminescent genes.": {
-            " Substep 1: Conduct a literature search to identify known bioluminescent genes or design primers for PCR amplification of potential bioluminescent genes.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+        " Step 3: Bioluminescence Screening\nThe next day, examine the agar plates for colonies that exhibit bioluminescence. Shine a light source on the plates and look for colonies that emit light. These colonies are potential positive clones that have successfully taken up the recombinant plasmid carrying the bioluminescent genes. Isolate several of these colonies and confirm their bioluminescence by performing a luciferase assay or using a bioluminescence imaging system. Positive clones will exhibit bioluminescence under specific conditions, indicating successful transformation and expression of the bioluminescent genes.": {
+            " Substep 1: Prepare a dark room or use a light-tight box to minimize background light interference during the screening process.\n": [
+                " Line 1: Locate the plates.\n",
+                " Line 2: Set the temperature of the storage unit to 4\u00b0C.\n",
+                " Line 3: Place the plates in the storage unit for further analysis or downstream experiments."
             ],
-            " Substep 2: Obtain a bioluminescent organism and collect a sample for DNA extraction. This can be done by culturing bacteria or collecting tissue samples from larger organisms.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 2: Place the agar plates containing the transformed E. coli colonies on a flat surface.\n": [
+                " Line 1: Check if a dark room is available.\n",
+                " Line 2: If a dark room is available, use it for screening.\n",
+                " Line 3: If a dark room is not available, set up a light-tight box for screening."
             ],
-            " Substep 3: Perform DNA extraction using a suitable method, such as phenol-chloroform extraction or a commercial DNA extraction kit, to isolate genomic DNA from the sample.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 3: Turn off the room lights and allow your eyes to adjust to the darkness for a few minutes.\n": [
+                " Line 1: Locate agar plates with transformed E. coli colonies.\n",
+                " Line 2: Identify a flat surface.\n",
+                " Line 3: Place agar plates with transformed E. coli colonies on the identified flat surface."
             ],
-            " Substep 4: Quantify the extracted DNA using a spectrophotometer or fluorometer to determine the concentration and purity of the DNA.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 4: Use a light source, such as a handheld UV lamp or a blue LED light, to shine light onto the agar plates. Hold the light source close to the plates, but avoid direct contact to prevent contamination.\n": [
+                " Line 1: Locate light switch.\n",
+                " Line 2: Turn off light switch.\n",
+                " Line 3: Wait for a specified amount of time for eyes to adjust to darkness."
             ],
-            " Substep 5: Set up PCR reactions using the isolated genomic DNA as a template and the designed primers specific to the bioluminescent genes of interest. Amplify the target genes through PCR.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 5: Observe the plates carefully for any colonies that emit light. These colonies will appear as glowing spots against the dark background.\n": [
+                " Line 1: Locate light source (e.g., handheld UV lamp or blue LED light).\n",
+                " Line 2: Position light source close to agar plates.\n",
+                " Line 3: Ensure light source does not make direct contact with agar plates to prevent contamination."
             ],
-            " Substep 6: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Visualize the DNA bands under UV light.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 6: Mark the potential positive colonies by circling them on the bottom of the agar plates using a sterile marker or by placing a sterile marker dot on the lid of the plate.\n": [
+                " Line 1: Locate the plates.\n",
+                " Line 2: Examine each plate carefully.\n",
+                " Line 3: Identify any colonies that emit light as glowing spots against the dark background."
             ],
-            " Substep 7: Purify the PCR products using a DNA purification kit to remove any contaminants or unincorporated primers.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 7: Using a sterile inoculating loop or pipette tip, transfer a small portion of each potential positive colony to a fresh agar plate or a liquid culture medium for further confirmation.\n": [
+                " Line 1: Retrieve agar plate.\n",
+                " Line 2: Obtain sterile marker.\n",
+                " Line 3: Circle potential positive colonies on the bottom of the agar plate or place a sterile marker dot on the lid of the plate."
             ],
-            " Substep 8: Optionally, perform DNA sequencing on the purified PCR products to confirm the identity of the bioluminescent genes or to obtain the complete sequence for further analysis.": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 8: Confirm the bioluminescence of the potential positive colonies by performing a luciferase assay or using a bioluminescence imaging system according to the established protocols. Positive clones will exhibit bioluminescence under specific conditions, indicating successful transformation and expression of the bioluminescent genes.": [
+                " Line 1: Locate sterile inoculating loop or pipette tip.\n",
+                " Line 2: Transfer a small portion of each potential positive colony.\n",
+                " Line 3: Transfer to a fresh agar plate or liquid culture medium for further confirmation."
             ]
         }
     },
     "Phase 3: Expression and Optimization\nIn this phase, you will optimize the expression of the bioluminescent genes in E. coli to maximize the production of the glowing protein. You will need to optimize growth conditions, such as temperature, media composition, and inducer concentration, to enhance the expression of the bioluminescent genes. Additionally, you may need to perform mutagenesis or genetic engineering to improve the brightness and stability of the glow in the dark E. coli.": {
-        " Step 1: Gene Identification and Isolation\nStart by identifying and isolating the genes responsible for bioluminescence from a bioluminescent organism, such as fireflies or bacteria. This can be done by conducting a literature search to find known bioluminescent genes or by using molecular techniques like PCR or DNA sequencing to identify novel bioluminescent genes. Once identified, isolate the genes from the organism's genomic DNA using techniques like DNA extraction and purification.\n\n": {
-            " Substep 1: Conduct a literature search to identify known bioluminescent genes or design primers for PCR amplification of potential bioluminescent genes.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+        " Step 1: Growth Condition Optimization\nStart by testing different growth conditions to optimize the expression of the bioluminescent genes. Vary the temperature, media composition, and inducer concentration to find the conditions that yield the highest expression levels. For example, you can try growing the E. coli at different temperatures (e.g., 25\u00b0C, 30\u00b0C, 37\u00b0C) and in different media (e.g., LB broth, minimal media) supplemented with different concentrations of the inducer molecule (e.g., IPTG). Monitor the bioluminescence levels using a luminometer or by visually inspecting the glow.\n": {
+            " Substep 1: Prepare different growth conditions by varying the temperature, media composition, and inducer concentration. For example, prepare LB broth supplemented with different concentrations of the inducer molecule (e.g., 0.1 mM, 0.5 mM, 1 mM IPTG) and adjust the temperature accordingly (e.g., 25\u00b0C, 30\u00b0C, 37\u00b0C).\n": [
+                " Line 1: Prepare luciferase assay reagents according to protocol.\n",
+                " Line 2: Transfer potential positive colonies to wells of a microplate.\n",
+                " Line 3: Add luciferase assay reagents to each well and measure bioluminescence using a luminometer or bioluminescence imaging system."
             ],
-            " Substep 2: Obtain a bioluminescent organism and collect a sample for DNA extraction. This can be done by culturing bacteria or collecting tissue samples from larger organisms.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 2: Inoculate separate flasks or plates with the transformed E. coli cells in each growth condition. Use the same initial cell density for all conditions.\n": [
+                " Line 1: Set temperature to 25\u00b0C.\n",
+                " Line 2: Prepare LB broth supplemented with 0.1 mM IPTG.\n",
+                " Line 3: Adjust media composition and inducer concentration as desired.\n\n"
             ],
-            " Substep 3: Perform DNA extraction using a suitable method, such as phenol-chloroform extraction or a commercial DNA extraction kit, to isolate genomic DNA from the sample.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 3: Incubate the flasks or plates at the designated temperatures for a specific duration (e.g., 12 hours).\n": [
+                " Line 1: Set temperature to 30\u00b0C.\n",
+                " Line 2: Prepare LB broth supplemented with 0.5 mM IPTG.\n",
+                " Line 3: Adjust media composition and inducer concentration as desired.\n\n"
             ],
-            " Substep 4: Quantify the extracted DNA using a spectrophotometer or fluorometer to determine the concentration and purity of the DNA.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 4: After the incubation period, measure the bioluminescence levels using a luminometer or visually inspect the glow of the plates under appropriate lighting conditions.\n": [
+                " Line 1: Set temperature to 37\u00b0C.\n",
+                " Line 2: Prepare LB broth supplemented with 1 mM IPTG.\n",
+                " Line 3: Adjust media composition and inducer concentration as desired."
             ],
-            " Substep 5: Set up PCR reactions using the isolated genomic DNA as a template and the designed primers specific to the bioluminescent genes of interest. Amplify the target genes through PCR.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 5: Record the bioluminescence levels for each growth condition.\n": [
+                " Line 1: Locate transformed E. coli cells.\n",
+                " Line 2: Prepare separate flasks or plates for each growth condition.\n",
+                " Line 3: Transfer the same initial cell density of transformed E. coli cells into each flask or plate."
             ],
-            " Substep 6: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Visualize the DNA bands under UV light.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 6: Analyze the data to identify the growth condition that yields the highest bioluminescence levels.\n": [
+                " Line 1: Set the temperature to the designated temperature.\n",
+                " Line 2: Set a timer for the specific duration.\n",
+                " Line 3: Monitor the flasks or plates for the duration of the timer."
             ],
-            " Substep 7: Purify the PCR products using a DNA purification kit to remove any contaminants or unincorporated primers.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 7: Repeat the experiment if necessary to confirm the optimal growth condition.\n": [
+                " Line 1: Set a timer for the specified incubation period.\n",
+                " Line 2: Retrieve luminometer or appropriate lighting equipment.\n",
+                " Line 3: Measure bioluminescence levels using the luminometer or visually inspect the glow of the plates under appropriate lighting conditions."
             ],
-            " Substep 8: Optionally, perform DNA sequencing on the purified PCR products to confirm the identity of the bioluminescent genes or to obtain the complete sequence for further analysis.": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 8: Once the optimal growth condition is determined, proceed to the next step of the research project.": [
+                " Line 1: Prepare bioluminescence measurement device.\n",
+                " Line 2: Set device to record mode.\n",
+                " Line 3: Record bioluminescence levels for each growth condition."
             ]
         },
-        " Step 2: Primer Design and PCR Amplification\nDesign primers specific to the identified bioluminescent genes. These primers should flank the target gene and have sequences that are complementary to the gene's DNA sequence. Use these primers in a PCR reaction to amplify the bioluminescent genes from the isolated genomic DNA. Optimize the PCR conditions, including annealing temperature and cycle number, to ensure efficient and specific amplification of the target genes.\n\n": {
-            " Substep 1: Conduct a literature search to identify known bioluminescent genes or design primers for PCR amplification of potential bioluminescent genes.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+        " Step 2: Mutagenesis or Genetic Engineering\nIf the expression levels or the brightness and stability of the glow are not satisfactory, consider performing mutagenesis or genetic engineering to improve these traits. Mutagenesis can be done using techniques like error-prone PCR or site-directed mutagenesis to introduce random or specific mutations in the bioluminescent genes. Genetic engineering techniques like gene fusion or promoter engineering can also be employed to enhance the expression of the genes. After introducing the desired changes, repeat the growth condition optimization step to evaluate the impact of the modifications on bioluminescence.\n": {
+            " Substep 1: Design primers for mutagenesis or genetic engineering based on the desired changes. For mutagenesis, design primers that introduce random mutations or specific changes in the bioluminescent genes. For genetic engineering, design primers that facilitate gene fusion or promoter engineering.\n": [
+                " Line 1: Retrieve data from bioluminescence measurements.\n",
+                " Line 2: Compare bioluminescence levels for different growth conditions.\n",
+                " Line 3: Identify the growth condition with the highest bioluminescence levels."
             ],
-            " Substep 2: Obtain a bioluminescent organism and collect a sample for DNA extraction. This can be done by culturing bacteria or collecting tissue samples from larger organisms.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 2: Perform mutagenesis or genetic engineering using the designed primers and appropriate techniques such as error-prone PCR or site-directed mutagenesis for mutagenesis, or PCR-based gene fusion or promoter engineering for genetic engineering.\n": [
+                " Line 1: Check if optimal growth condition is confirmed.\n",
+                " Line 2: If not confirmed, go back to Step 1.\n",
+                " Line 3: If confirmed, proceed to next step."
             ],
-            " Substep 3: Perform DNA extraction using a suitable method, such as phenol-chloroform extraction or a commercial DNA extraction kit, to isolate genomic DNA from the sample.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 3: Transform the mutated or engineered DNA into competent E. coli cells using a suitable transformation method such as heat shock or electroporation.\n": [
+                " Line 1: Check if optimal growth condition is determined.\n",
+                " Line 2: If optimal growth condition is determined, proceed to next step.\n",
+                " Line 3: If optimal growth condition is not determined, continue testing different conditions."
             ],
-            " Substep 4: Quantify the extracted DNA using a spectrophotometer or fluorometer to determine the concentration and purity of the DNA.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 4: Plate the transformed cells on selective agar plates containing appropriate antibiotics or selection markers to select for cells that have taken up the mutated or engineered DNA.\n": [
+                " Line 1: Identify desired changes for mutagenesis or genetic engineering.\n",
+                " Line 2: Design primers to introduce random mutations or specific changes in bioluminescent genes for mutagenesis.\n",
+                " Line 3: Design primers to facilitate gene fusion or promoter engineering for genetic engineering."
             ],
-            " Substep 5: Set up PCR reactions using the isolated genomic DNA as a template and the designed primers specific to the bioluminescent genes of interest. Amplify the target genes through PCR.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 5: Incubate the plates at the appropriate temperature for E. coli growth (usually 37\u00b0C) for 12-16 hours to allow colonies to form.\n": [
+                " Line 1: Retrieve designed primers.\n",
+                " Line 2: Determine appropriate technique (error-prone PCR, site-directed mutagenesis, PCR-based gene fusion, promoter engineering).\n",
+                " Line 3: Perform mutagenesis or genetic engineering using the selected technique and designed primers."
             ],
-            " Substep 6: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Visualize the DNA bands under UV light.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 6: Pick individual colonies and streak them onto fresh selective agar plates to obtain single colonies.\n": [
+                " Line 1: Locate mutated or engineered DNA.\n",
+                " Line 2: Locate competent E. coli cells.\n",
+                " Line 3: Perform heat shock or electroporation to transform DNA into E. coli cells."
             ],
-            " Substep 7: Purify the PCR products using a DNA purification kit to remove any contaminants or unincorporated primers.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 7: Perform colony PCR or plasmid extraction to confirm the presence of the desired mutations or engineered DNA in the selected colonies.\n": [
+                " Line 1: Locate transformed cells.\n",
+                " Line 2: Locate selective agar plates.\n",
+                " Line 3: Transfer transformed cells onto selective agar plates."
             ],
-            " Substep 8: Optionally, perform DNA sequencing on the purified PCR products to confirm the identity of the bioluminescent genes or to obtain the complete sequence for further analysis.": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 8: Repeat the growth condition optimization step to evaluate the impact of the mutagenesis or genetic engineering on the expression levels, brightness, and stability of the glow. Adjust the growth conditions as necessary to optimize the bioluminescence traits.": [
+                " Line 1: Set incubation temperature to 37\u00b0C.\n",
+                " Line 2: Set incubation time to 12-16 hours.\n",
+                " Line 3: Monitor plates for colony formation during incubation period."
             ]
         },
-        " Step 3: Ligation into Plasmid Vector\nAfter PCR amplification, purify the amplified bioluminescent genes using techniques like gel electrophoresis or PCR purification kits. Next, ligate the purified genes into a suitable plasmid vector using DNA ligase. The plasmid vector should have features like a selectable marker (e.g., antibiotic resistance gene) and an origin of replication for replication in E. coli. Transform the ligated plasmid into E. coli cells using methods like heat shock or electroporation to create recombinant E. coli strains containing the bioluminescent genes.": {
-            " Substep 1: Conduct a literature search to identify known bioluminescent genes or design primers for PCR amplification of potential bioluminescent genes.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+        " Step 3: Evaluation and Selection\nEvaluate the expression levels and the brightness and stability of the glow in the dark E. coli under the optimized conditions. Compare the results with the initial expression levels to determine the effectiveness of the optimization steps. Select the strain or conditions that yield the highest expression and the brightest and most stable glow for further experiments or applications.": {
+            " Substep 1: Harvest the glow in the dark E. coli cells from the optimized conditions. This can be done by centrifugation at a specific speed and time, depending on the volume of the culture.\n": [
+                " Line 1: Locate fresh selective agar plates.\n",
+                " Line 2: Pick an individual colony from the previous step.\n",
+                " Line 3: Streak the picked colony onto a fresh selective agar plate to obtain single colonies."
             ],
-            " Substep 2: Obtain a bioluminescent organism and collect a sample for DNA extraction. This can be done by culturing bacteria or collecting tissue samples from larger organisms.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 2: Resuspend the harvested cells in an appropriate buffer or medium for evaluation. This buffer should maintain the viability and functionality of the cells.\n": [
+                " Line 1: Locate selected colonies.\n",
+                " Line 2: Perform colony PCR or plasmid extraction on each selected colony.\n",
+                " Line 3: Analyze the PCR or extracted plasmid to confirm the presence of desired mutations or engineered DNA."
             ],
-            " Substep 3: Perform DNA extraction using a suitable method, such as phenol-chloroform extraction or a commercial DNA extraction kit, to isolate genomic DNA from the sample.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 3: Measure the expression levels of the glow in the dark protein using a suitable method, such as fluorescence spectroscopy or Western blotting. Compare these levels with the initial expression levels to determine the effectiveness of the optimization steps.\n": [
+                " Line 1: Set up mutagenesis or genetic engineering experiment.\n",
+                " Line 2: Measure expression levels, brightness, and stability of the glow.\n",
+                " Line 3: Adjust growth conditions based on measured traits to optimize bioluminescence."
             ],
-            " Substep 4: Quantify the extracted DNA using a spectrophotometer or fluorometer to determine the concentration and purity of the DNA.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 4: Assess the brightness and stability of the glow in the dark E. coli cells by visually inspecting the intensity and duration of the glow. This can be done by exposing the cells to a specific light source and monitoring the emitted light over time.\n": [
+                " Line 1: Set centrifuge speed and time based on culture volume.\n",
+                " Line 2: Locate culture flask.\n",
+                " Line 3: Centrifuge culture flask at specified speed and time."
             ],
-            " Substep 5: Set up PCR reactions using the isolated genomic DNA as a template and the designed primers specific to the bioluminescent genes of interest. Amplify the target genes through PCR.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 5: Analyze the data obtained from the expression levels and brightness/stability assessments. Determine which strain or conditions yield the highest expression and the brightest and most stable glow.\n": [
+                " Line 1: Locate harvested cells.\n",
+                " Line 2: Locate appropriate buffer or medium.\n",
+                " Line 3: Transfer harvested cells into the buffer or medium for evaluation."
             ],
-            " Substep 6: Analyze the PCR products by agarose gel electrophoresis to confirm successful amplification of the target genes. Visualize the DNA bands under UV light.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 6: Select the strain or conditions that show the desired characteristics for further experiments or applications. This selection should be based on the evaluation results and the specific requirements of the project.\n": [
+                " Line 1: Prepare a sample for measurement.\n",
+                " Line 2: Perform fluorescence spectroscopy or Western blotting on the sample.\n",
+                " Line 3: Compare the measured expression levels with the initial levels to determine effectiveness."
             ],
-            " Substep 7: Purify the PCR products using a DNA purification kit to remove any contaminants or unincorporated primers.\n": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 7: Document the evaluation and selection process, including the data obtained and the rationale behind the chosen strain or conditions.\n": [
+                " Line 1: Position glow in the dark E. coli cells under specific light source.\n",
+                " Line 2: Observe intensity of emitted light.\n",
+                " Line 3: Monitor duration of emitted light."
             ],
-            " Substep 8: Optionally, perform DNA sequencing on the purified PCR products to confirm the identity of the bioluminescent genes or to obtain the complete sequence for further analysis.": [
-                " Line 1: Access literature database.\n",
-                " Line 2: Search for bioluminescent genes.\n",
-                " Line 3: Retrieve known bioluminescent genes or design primers for PCR amplification."
+            " Substep 8: Proceed with the chosen strain or conditions for subsequent experiments or applications, keeping in mind the need for proper controls and replicates to ensure reliable results.": [
+                " Line 1: Retrieve data from expression levels assessment.\n",
+                " Line 2: Retrieve data from brightness/stability assessment.\n",
+                " Line 3: Compare data to identify strain or conditions with highest expression, brightest glow, and most stability."
             ]
         }
     }

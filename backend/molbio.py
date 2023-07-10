@@ -115,7 +115,16 @@ def displayOutput(list1, list2, list3, list4):
     :param list4: The list of responses from the fourth chain
     :return: A nested dictionary of generated responses
     """
-    nested_dict = {l1: {l2: {l3: list(itertools.islice(list4, 0, 3)) for l3 in list3[:8]} for l2 in list2[:3]} for l1 in list1}
+    nested_dict = {}
+    for l1 in list1:
+        nested_dict[l1] = {}
+        for l2 in list2[:3]:
+            nested_dict[l1][l2] = {}
+            for l3 in list3[:8]:
+                nested_dict[l1][l2][l3] = list(itertools.islice(list4, 0, 3))
+                del list4[:3]
+            del list3[:8]
+        del list2[:3]
     return nested_dict
 
 def driver(user_input):
@@ -147,7 +156,7 @@ def driver(user_input):
     print("Created nested dictionary")
 
     return outputData
-    
+
 def test(user_input):
     time.sleep(30)
     user_input += "Successfully accessed\n"
