@@ -134,7 +134,7 @@ function App() {
       <header className="App-header">
         <form onSubmit={handleSubmit}>
           <input className="App-input" type="text" value={input} onChange={e => setInput(e.target.value)} />
-          <button className="App-button" type="submit">{isSubmitted ? 'Submitted' : 'Plan out your bio research project, start-to-finish, step-by-step, in under 30 seconds'}</button>
+          <button className="App-button" type="submit">{isSubmitted ? 'Submitted' : 'Plan out your bio research project (i.e. "Make glow-in-the-dark E. coli"), start-to-finish, step-by-step, in under 30 seconds'}</button>
         </form>
 
         {isLoading && <div>{loadingMessage}</div>}
