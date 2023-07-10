@@ -7,6 +7,15 @@
   <body>
     <div id="root"></div>
     <!-- other body content -->
+    <script>
+      // Inject the correct value for %PUBLIC_URL% at runtime
+      // This is required for the correct path resolution
+      window.onload = function () {
+        const stylesheet = document.querySelector('link[rel="stylesheet"]');
+        stylesheet.href = process.env.PUBLIC_URL + '/styles.css';
+      };
+    </script>
   </body>
 </html>
+
   

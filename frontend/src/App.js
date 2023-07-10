@@ -1,6 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './styles.css';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+const linkElement = document.createElement('link');
+linkElement.rel = 'stylesheet';
+linkElement.href = process.env.PUBLIC_URL + '/styles.css'; // Add the path to your .css file
+document.head.appendChild(linkElement);
 
 // Component for displaying nested JSON data with formatting
 function JSONDisplay({ data, level = 0 }) {
