@@ -147,6 +147,12 @@ def driver(user_input):
     print("Created nested dictionary")
 
     return outputData
+    
+def test(user_input):
+    time.sleep(30)
+    user_input += "Successfully accessed\n"
+    user_input += "the molbio.ai"
+    return user_input
 
 if __name__ == "__main__":
    # Main entry point for the script
