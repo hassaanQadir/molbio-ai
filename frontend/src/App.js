@@ -117,7 +117,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="App-title">molbio.ai</h1>
-      <h2 className="App-version-title">0.9.0</h2>
+      <h2 className="App-version-title">1.0.0</h2>
       <header className="App-header">
       <form onSubmit={handleSubmit}>
       <input className="App-input" type="text" value={input} onChange={e => setInput(e.target.value)} />
