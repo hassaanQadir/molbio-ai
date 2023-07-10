@@ -10,7 +10,7 @@ function JSONDisplay({ data, level = 0 }) {
       const colors = ["#b0b0b0", "#d0d0d0", "#e0e0e0", "#f0f0f0"];
       const backgroundColor = colors[level % colors.length];
 
-      if (level <= 1) {
+      if (level < 1) {
         return <strong style={{ backgroundColor }}>{text}</strong>;
       } else if (level % 2 === 0) {
         return <em style={{ backgroundColor }}>{text}</em>;
