@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './styles.css';
 
 // Component for displaying nested JSON data with formatting
 function JSONDisplay({ data, level = 0 }) {
@@ -21,14 +22,14 @@ function JSONDisplay({ data, level = 0 }) {
       data.forEach((value, index) => {
         if (typeof value === 'object' && value !== null) {
           markup.push(
-            <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
+            <div key={index} className="level-container" style={{ paddingLeft: `${level * 20}px` }}>
               {applyFormatting(`${index}:`, level)}
               <JSONDisplay data={value} level={level + 1} />
             </div>
           );
         } else {
           markup.push(
-            <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
+            <div key={index} className="level-container" style={{ paddingLeft: `${level * 20}px` }}>
               {applyFormatting(`${index}:`, level)} {value}
             </div>
           );
@@ -39,14 +40,14 @@ function JSONDisplay({ data, level = 0 }) {
         const value = data[key];
         if (typeof value === 'object' && value !== null) {
           markup.push(
-            <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
+            <div key={index} className="level-container" style={{ paddingLeft: `${level * 20}px` }}>
               {applyFormatting(`${key}:`, level)}
               <JSONDisplay data={value} level={level + 1} />
             </div>
           );
         } else {
           markup.push(
-            <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
+            <div key={index} className="level-container" style={{ paddingLeft: `${level * 20}px` }}>
               {applyFormatting(`${key}:`, level)} {value}
             </div>
           );
@@ -56,8 +57,10 @@ function JSONDisplay({ data, level = 0 }) {
     return markup;
   };
 
-  return <div>{createMarkup(data)}</div>;
+  return <div className="json-display">{createMarkup(data)}</div>;
 }
+
+
 
 // Main App component
 function App() {
