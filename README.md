@@ -36,8 +36,10 @@ nginx/: Contains the configuration file for the Nginx reverse proxy server.
 
 This website can be accessed at my domain, molbio.ai
 
-<img width="960" alt="screenshot of molbio.ai home page" src="https://github.com/hassaanQadir/molbio.ai/assets/86531769/efa7fcbf-86b0-44e7-8a9c-1d072b75241b">
-<img width="960" alt="screenshot of molbio.ai result page" src="https://github.com/hassaanQadir/molbio.ai/assets/86531769/f7e14535-8e9b-4bea-a6fa-078afe109b18">
+<img width="960" alt="image" src="https://github.com/hassaanQadir/molbio.ai/assets/86531769/caa0da23-ce96-4a18-b976-58d9e4b8217d">
+
+<img width="960" alt="image" src="https://github.com/hassaanQadir/molbio.ai/assets/86531769/29c3f828-a468-4f25-bb9f-b01fd9e614b1">
+
 
 To host this on your machine, make sure you have Docker and Docker compose. Then, clone the repository and run:
 
