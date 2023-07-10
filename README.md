@@ -1,12 +1,12 @@
 # Molecular Biology Automation (molbio.ai)
 
-The molbio.ai application is a full-stack application aimed at automating molecular biology workflows. The application allows users to enter specific biology research project parameters, which it then processes and returns a detailed breakdown of the necessary steps to automate the project, along with OpenTrons API code to automate relevant steps.
+The molbio.ai application is a full-stack application aimed at automating molecular biology workflows. The application allows users to enter specific biology research project parameters, which it then processes and returns a detailed breakdown of the necessary steps to conduct the project.
 
 ## Backend
 
 The backend of this application is built using Flask and served by Gunicorn. It has two main dependencies: the `flask` package to set up the web server, and `flask_cors` to handle Cross-Origin Resource Sharing (CORS), allowing the frontend and backend to communicate.
 
-The application's backend contains an API endpoint (`/reverse`), which accepts POST requests. When the server receives data from the client, it calls a function `main()` imported from `molbio.py` to process the user input. The processed data is then returned to the frontend.
+The application's backend contains an API endpoint (`/main`), which accepts POST requests. When the server receives data from the client, it calls a function `main()` imported from `molbio.py` to process the user input. The processed data is then returned to the frontend.
 
 Exception handling is implemented to catch and report any errors that may occur during the processing of the user input. 
 
