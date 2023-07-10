@@ -1,7 +1,7 @@
 # Import necessary libraries
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from molbio import test, main
+from molbio import test, driver
 import traceback
 
 # Initialize Flask app
@@ -25,8 +25,8 @@ def process_data():
         app.logger.info(f"Received data: {data}")
         app.logger.info(f"User input: {user_input}")
 
-        # Process the user input through molbio.py's main function
-        processed_data = main(user_input)
+        # Process the user input through molbio.py's driver function
+        processed_data = driver(user_input)
 
         # Log the processed data and another informative log
         app.logger.info(f"Processed data: {processed_data}")
