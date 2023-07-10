@@ -1,7 +1,57 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+function JSONDisplay({ data }) {
+  const createMarkup = (data) => {
+    let markup = [];
+
+    if (Array.isArray(data)) {
+      data.forEach((value, index) => {
+        if (typeof value === 'object' && value !== null) {
+          markup.push(
+            <div key={index}>
+              <strong>{index}:</strong>
+              <JSONDisplay data={value} />
+            </div>
+          );
+        } else {
+          markup.push(
+            <div key={index}>
+              <strong>{index}:</strong> {value}
+            </div>
+          );
+        }
+      });
+    } else {
+      Object.keys(data).forEach((key, index) => {
+        const value = data[key];
+
+        if (typeof value === 'object' && value !== null) {
+          markup.push(
+            <div key={index}>
+              <strong>{key}:</strong>
+              <JSONDisplay data={value} />
+            </div>
+          );
+        } else {
+          markup.push(
+            <div key={index}>
+              <strong>{key}:</strong> {value}
+            </div>
+          );
+        }
+      });
+    }
+
+    return markup;
+  };
+
+  return <div>{createMarkup(data)}</div>;
+}
+
+
 function App() {
+
   // Define state variables
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
@@ -64,7 +114,9 @@ function App() {
       </form>
 
       {isLoading && <div>{loadingMessage}</div>}
-      {!isLoading && result && <pre>{result}</pre>}
+
+      {!isLoading && result && <JSONDisplay data={result} />}
+
       </header>
     </div>
   );
