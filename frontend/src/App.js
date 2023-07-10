@@ -107,24 +107,25 @@ function App() {
     };
   }, [isLoading]);
 
-  // Handle form submission
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setIsSubmitted(true);
+// Handle form submission
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitted(true);
 
-    try {
-      // Send a POST request to the backend
-      const response = await axios.post('/api/main', { input: input });
-      setResult(response.data.result);
-    } catch (error) {
-      console.error('Error:', error);
-    } finally {
-      // Stop loading and reset isSubmitted state
-      setIsLoading(false);
-      setIsSubmitted(false);
-    }
-  };
+  try {
+    setIsLoading(true); // Set isLoading to true before making the POST request
+
+    // Send a POST request to the backend
+    const response = await axios.post('/api/main', { input: input });
+    setResult(response.data.result);
+  } catch (error) {
+    console.error('Error:', error);
+  } finally {
+    // Stop loading and reset isSubmitted state
+    setIsLoading(false);
+    setIsSubmitted(false);
+  }
+};
 
   // Render the component
   return (
