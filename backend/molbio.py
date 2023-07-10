@@ -105,14 +105,13 @@ def applyLayer(chain, inputList):
     finalList = process_results(rawList)
     return finalList
 
-def displayOutput(list1, list2, list3, list4):
+def displayOutput(list1, list2, list3):
     """
     Display the generated responses in a nested dictionary format
 
     :param list1: The list of responses from the first chain
     :param list2: The list of responses from the second chain
     :param list3: The list of responses from the third chain
-    :param list4: The list of responses from the fourth chain
     :return: A nested dictionary of generated responses
     """
     nested_dict = {}
@@ -121,8 +120,7 @@ def displayOutput(list1, list2, list3, list4):
         for l2 in list2[:3]:
             nested_dict[l1][l2] = {}
             for l3 in list3[:8]:
-                nested_dict[l1][l2][l3] = list(itertools.islice(list4, 0, 3))
-                del list4[:3]
+                nested_dict[l1][l2][l3] = None
             del list3[:8]
         del list2[:3]
     return nested_dict
@@ -140,7 +138,7 @@ def driver(user_input):
     print("Entered driver function")
 
     # Create chains
-    chains = [create_llmchain(i) for i in range(1, 5)]
+    chains = [create_llmchain(i) for i in range(1, 4)]
     print("Chains created")
     
     # Apply layers of response generation
