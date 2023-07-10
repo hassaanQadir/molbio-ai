@@ -26,7 +26,7 @@ def process_data():
         app.logger.info(f"User input: {user_input}")
 
         # Process the user input through molbio.py's driver function
-        processed_data = test(user_input)
+        processed_data = driver(user_input)
 
         # Log the processed data and another informative log
         app.logger.info(f"Processed data: {processed_data}")
