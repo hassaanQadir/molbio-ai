@@ -1,109 +1,49 @@
-import os
+# Standard library imports
+import asyncio
+import itertools
 import json
+import os
 import time
 
+# Third party imports
 import openai
 import pinecone
+
+# Local application imports
 from dotenv import load_dotenv
-
-from langchain.chat_models import ChatOpenAI
+from langchain import LLMChain, PromptTemplate
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-from langchain import PromptTemplate, LLMChain
+from langchain.chat_models import ChatOpenAI
+from langchain.llms import OpenAI
+from langchain.prompts import PromptTemplate
 from langchain.prompts.chat import (
-    ChatPromptTemplate,
-    SystemMessagePromptTemplate,
     AIMessagePromptTemplate,
+    ChatPromptTemplate,
     HumanMessagePromptTemplate,
+    SystemMessagePromptTemplate,
 )
-from langchain.schema import (
-    AIMessage,
-    HumanMessage,
-    SystemMessage
-)
+from langchain.schema import AIMessage, HumanMessage, SystemMessage
 
-# Load environment variables
+# Load environment variables from '.env' file
 load_dotenv('.env')
 
-# Use the environment variables for the API keys if available
+# Get the OpenAI and Pinecone API keys from environment variables
 openai_api_key = os.getenv('OPENAI_API_KEY')
 pinecone_api_key = os.getenv('PINECONE_API_KEY')
 
-# Load agents' data from JSON
+# Load agents' data from JSON file 'agents.json'
 with open('agents.json', 'r') as f:
     agentsData = json.load(f)
 
-# Set the OpenAI and Pinecone API keys
+# Set the OpenAI and Pinecone API keys for use in their respective libraries
 openai.api_key = openai_api_key
-pinecone.init(api_key=pinecone_api_key, enviroment="us-west1-gcp")
+pinecone.init(api_key=pinecone_api_key, environment="us-west1-gcp")
 
-# Name of the index where we vectorized the OpenTrons API
+# Pinecone index for vectorizing OpenTrons API
 index_name = 'opentronsapi-docs'
 index = pinecone.Index(index_name)
 
-
-def retry_on_error(func, arg, max_attempts=5):
-    """
-    Retry a function in case of an error. This guards against rate limit errors.
-    The function will be retried max_attempts times with a delay of 4 seconds between attempts.
-
-    :param func: The function to retry
-    :param arg: The argument to pass to the function
-    :param max_attempts: The maximum number of attempts
-    :return: The result of the function or a string indicating an API error
-    """
-    for attempt in range(max_attempts):
-        try:
-            result = func(arg)
-            return result
-        except Exception as e:
-            if attempt < max_attempts - 1:  # no need to sleep on the last attempt
-                print(f"Attempt {attempt + 1} failed. Retrying in 4 seconds.")
-                time.sleep(4)
-            else:
-                print(f"Attempt {attempt + 1} failed. No more attempts left.")
-                API_error = "OpenTronsAPI Error"
-                return API_error
-
-
-def askOpenTrons(query):
-    """
-    Query the OpenTrons API index and return answers
-
-    :param query: The question to ask
-    :return: The answer from the API
-    """
-    embed_model = agentsData[0]['embed_model']
-
-    res = openai.Embedding.create(
-        input=["Provide the exact code to perform this step:", query],
-        engine=embed_model
-    )
-
-    # retrieve from Pinecone
-    xq = res['data'][0]['embedding']
-
-    # get relevant contexts (including the questions)
-    res = index.query(xq, top_k=5, include_metadata=True)
-
-    # get list of retrieved text
-    contexts = [item['metadata']['text'] for item in res['matches']]
-
-    augmented_query = "\n\n---\n\n".join(contexts) + "\n\n-----\n\n" + query
-
-    # system message to 'prime' the model
-    template = (agentsData[5]['agent5_template'])
-
-    res = openai.ChatCompletion.create(
-        model=agentsData[0]['chat_model'],
-        messages=[
-            {"role": "system", "content": template},
-            {"role": "user", "content": augmented_query}
-        ]
-    )
-
-    return (res['choices'][0]['message']['content'])
-
-
+# Function definitions for main program logic
 def create_llmchain(agent_id):
     """
     Create a LLMChain for a specific agent by calling on prompts stored in agents.json
@@ -116,76 +56,101 @@ def create_llmchain(agent_id):
     system_message_prompt = SystemMessagePromptTemplate.from_template(template)
     example_human = HumanMessagePromptTemplate.from_template(agentsData[agent_id]['agent{}_example1_human'.format(agent_id)])
     example_ai = AIMessagePromptTemplate.from_template(agentsData[agent_id]['agent{}_example1_AI'.format(agent_id)])
-    human_template = "{text}"
-    human_message_prompt = HumanMessagePromptTemplate.from_template(human_template)
+    human_message_prompt = HumanMessagePromptTemplate.from_template("{text}")
     chat_prompt = ChatPromptTemplate.from_messages([system_message_prompt, example_human, example_ai, human_message_prompt])
     return LLMChain(llm=chat, prompt=chat_prompt)
 
-# Create Agents for each Layer, 1 to 4
-# The OpenTrons API Agent is created separately in askOpentrons()
-chain_1 = create_llmchain(1)
-chain_2 = create_llmchain(2)
-chain_3 = create_llmchain(3)
-chain_4 = create_llmchain(4)
+async def async_generate(chain, prompt):
+    """
+    Asynchronous function to generate a response with the specified chain and prompt
 
-def main(user_input):
-    output_string = ""
+    :param chain: The chain to use for response generation
+    :param prompt: The prompt to provide to the chain
+    :return: The generated response
+    """
+    resp = await chain.arun({'text': prompt})
+    return resp
 
-    output_1 = chain_1.run(user_input)
-    raw_phases = output_1.split('|||')
-    phases = [s for s in raw_phases if len(s) >= 10]
-    output_string += "Here are all the phases at once\n\n"
-    output_string += "\n".join(phases)
-    output_string += "\n"
+async def generate_concurrently(chain, inputList):
+    """
+    Asynchronous function to generate responses concurrently for a list of inputs
 
-    for i, phase in enumerate(phases, 1):
-        output_string += "\n\nPhase {}\n{}\n".format(i, phase)
-        output_2 = chain_2.run(phase)
+    :param chain: The chain to use for response generation
+    :param inputList: The list of prompts to provide to the chain
+    :return: A list of generated responses
+    """
+    tasks = [async_generate(chain, input) for input in inputList]
+    outputList = await asyncio.gather(*tasks)
+    return outputList
 
-        raw_steps = output_2.split('|||')
-        steps = [s for s in raw_steps if len(s) >= 10]
-        output_string += "Here are all the steps at once for this phase\n\n"
-        output_string += "\n".join(steps)
-        output_string += "\n"
+def process_results(rawList):
+    """
+    Process raw list of generated responses to clean and consolidate results
 
-        for j, step in enumerate(steps, 1):
-            output_string += "Step {}\n{}\n".format(j, step)
-            output_3 = chain_3.run(step)
+    :param rawList: The raw list of generated responses
+    :return: A list of cleaned and consolidated responses
+    """
+    allCleanedItems = [s for item in rawList for s in item.split('|||') if len(s) >= 10]
+    return allCleanedItems
 
-            raw_substeps = output_3.split('|||')
-            substeps = [s for s in raw_substeps if len(s) >= 10]
-            output_string += "Here are all the substeps at once for this step\n\n"
-            output_string += "\n".join(substeps)
-            output_string += "\n"
+def applyLayer(chain, inputList):
+    """
+    Apply a layer of response generation to a list of inputs
 
-            for k, substep in enumerate(substeps, 1):
-                output_string += "Substep {}\n{}\n".format(k, substep)
-                output_4 = chain_4.run(substep)
+    :param chain: The chain to use for response generation
+    :param inputList: The list of prompts to provide to the chain
+    :return: A list of generated responses
+    """
+    rawList = asyncio.run(generate_concurrently(chain, inputList))
+    finalList = process_results(rawList)
+    return finalList
 
-                raw_commands = output_4.split('|||')
-                commands = [s for s in raw_commands if len(s) >= 5]
-                output_string += "Here are all the commands at once for this substep\n"
-                output_string += "\n".join(commands)
-                output_string += "\n"
+def displayOutput(list1, list2, list3, list4):
+    """
+    Display the generated responses in a nested dictionary format
 
-                for l, command in enumerate(commands, 1):
-                    output_string += "Line {}\n{}\n".format(l, command)
-                    output_string += "Here is the code for this command\n"
-                    output_string += retry_on_error(askOpenTrons,command)
-                    output_string += "\n\n"
+    :param list1: The list of responses from the first chain
+    :param list2: The list of responses from the second chain
+    :param list3: The list of responses from the third chain
+    :param list4: The list of responses from the fourth chain
+    :return: A nested dictionary of generated responses
+    """
+    nested_dict = {l1: {l2: {l3: list(itertools.islice(list4, 0, 3)) for l3 in list3[:8]} for l2 in list2[:3]} for l1 in list1}
+    return nested_dict
 
-    return output_string
+def driver(user_input):
+    """
+    Main function to drive the sequence of operations for the response generation process
 
+    :param user_input: The initial user input to provide to the first chain
+    :return: A nested dictionary of generated responses
+    """
+    user_input = [user_input]
+    outputData = {}
 
-def test(user_input):
-    time.sleep(30)
-    user_input += "Successfully accessed\n"
-    user_input += "the molbio.ai"
-    return user_input
+    print("Entered driver function")
+
+    # Create chains
+    chains = [create_llmchain(i) for i in range(1, 5)]
+    print("Chains created")
+    
+    # Apply layers of response generation
+    layers = []
+    for i, chain in enumerate(chains):
+        layer = applyLayer(chain, user_input if i == 0 else layers[-1])
+        layers.append(layer)
+        
+    print("Completed all layers")
+    
+    # Organize output in a nested dictionary
+    outputData = displayOutput(*layers)
+    print("Created nested dictionary")
+
+    return outputData
 
 if __name__ == "__main__":
-   answer = main("Make glow in the dark e. coli")
-   with open('readme.txt', 'w') as f:
-    f.write(answer)
-
-#we about to change this
+   # Main entry point for the script
+   answer = driver("Make glow in the dark e. coli")
+   with open('answer.json', 'w') as f:
+       # Write the answer to 'answer.json' file
+       json.dump(answer, f, indent=4)
