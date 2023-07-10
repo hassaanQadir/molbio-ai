@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-function JSONDisplay({ data }) {
+function JSONDisplay({ data, level = 0 }) {
   const createMarkup = (data) => {
     let markup = [];
 
@@ -9,14 +9,14 @@ function JSONDisplay({ data }) {
       data.forEach((value, index) => {
         if (typeof value === 'object' && value !== null) {
           markup.push(
-            <div key={index}>
+            <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
               <strong>{index}:</strong>
-              <JSONDisplay data={value} />
+              <JSONDisplay data={value} level={level + 1} />
             </div>
           );
         } else {
           markup.push(
-            <div key={index}>
+            <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
               <strong>{index}:</strong> {value}
             </div>
           );
@@ -28,14 +28,14 @@ function JSONDisplay({ data }) {
 
         if (typeof value === 'object' && value !== null) {
           markup.push(
-            <div key={index}>
+            <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
               <strong>{key}:</strong>
-              <JSONDisplay data={value} />
+              <JSONDisplay data={value} level={level + 1} />
             </div>
           );
         } else {
           markup.push(
-            <div key={index}>
+            <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
               <strong>{key}:</strong> {value}
             </div>
           );
@@ -48,6 +48,7 @@ function JSONDisplay({ data }) {
 
   return <div>{createMarkup(data)}</div>;
 }
+
 
 
 function App() {
