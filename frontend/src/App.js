@@ -20,7 +20,7 @@ function JSONDisplay({ data, level = 0 }) {
     let markup = [];
 
     const applyFormatting = (text, level) => {
-      const colors = ["#ffffff", "#e0e0e0", "#f0f0f0"];
+      const colors = ["#ffffff", "#b3d1ff", "#80aaff"];
       const backgroundColor = colors[level % colors.length];
 
       if (level < 1) {
