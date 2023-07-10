@@ -29,7 +29,6 @@ function JSONDisplay({ data, level = 0 }) {
         if (typeof value === 'object' && value !== null) {
           markup.push(
             <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
-              <strong>{key}:</strong>
               <JSONDisplay data={value} level={level + 1} />
             </div>
           );
