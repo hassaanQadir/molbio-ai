@@ -88,7 +88,7 @@ function App() {
 
   // Handle loading message updates
   useEffect(() => {
-    let messageIndex = 0;
+    let messageIndex = 1;
     let intervalId = null;
 
     // If loading, start a loop to update the loading message every 10 seconds
