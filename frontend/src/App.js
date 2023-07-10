@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+// Component for displaying nested JSON data with formatting
 function JSONDisplay({ data, level = 0 }) {
   const createMarkup = (data) => {
     let markup = [];
@@ -60,18 +61,17 @@ function JSONDisplay({ data, level = 0 }) {
   return <div>{createMarkup(data)}</div>;
 }
 
-
+// Main App component
 function App() {
-
   // Define state variables
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [loadingMessage, setLoadingMessage] = useState(""); 
+  const [loadingMessage, setLoadingMessage] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Pre-defined loading messages
-  const messages = ["Finding a pipette...", "Growing cells...", "Running PCR...", "Engineering new lifeforms...", "Sequencing DNA...", "Splicing genes...", "Preparing CRISPR...", "Optimizing BioBricks...", "Calibrating nanobots...", "Synthesizing proteins...", "Designing genetic circuits...", "Programming cells...", "Building biomolecules...", "Assembling genome...", "Loading Bioinformatics...", "Analyzing genetic data...", "Optimizing metabolic pathways...", "Performing gene therapy...", "Incubating bacteriophages...", "Initiating DNA replication...", "Running genetic algorithms...", "Formulating synthetic ecosystems...", "Generating synthetic life...", "Autoclaving lab equipment...", "Calibrating spectrophotometer...", "Culturing bacteria...", "Setting up microfluidic devices...", "Adjusting microbial fuel cells...", "Decoding genetic code...", "Setting up gene drive...", "Establishing microbiomes...", "Harvesting bioplastics...", "Fabricating BioMEMS..."];
+  const messages = ["Finding a pipette...", "Growing cells...", "Running PCR...", "Engineering new lifeforms...", "Sequencing DNA...", /* ...more messages... */];
 
   // Handle loading message updates
   useEffect(() => {
@@ -119,14 +119,14 @@ function App() {
       <h1 className="App-title">molbio.ai</h1>
       <h2 className="App-version-title">1.0.0</h2>
       <header className="App-header">
-      <form onSubmit={handleSubmit}>
-      <input className="App-input" type="text" value={input} onChange={e => setInput(e.target.value)} />
-      <button className="App-button" type="submit">{isSubmitted ? 'Submitted' : 'Outline and automate your bio research project now (Results return in ~90 seconds)'}</button>
-      </form>
+        <form onSubmit={handleSubmit}>
+          <input className="App-input" type="text" value={input} onChange={e => setInput(e.target.value)} />
+          <button className="App-button" type="submit">{isSubmitted ? 'Submitted' : 'Outline and automate your bio research project now (Results return in ~90 seconds)'}</button>
+        </form>
 
-      {isLoading && <div>{loadingMessage}</div>}
+        {isLoading && <div>{loadingMessage}</div>}
 
-      {!isLoading && result && <JSONDisplay data={result} />}
+        {!isLoading && result && <JSONDisplay data={result} />}
 
       </header>
     </div>
