@@ -6,12 +6,15 @@ function JSONDisplay({ data, level = 0 }) {
     let markup = [];
 
     const applyFormatting = (text, level) => {
+      const colors = ["#f0f0f0", "#e0e0e0", "#d0d0d0", "#c0c0c0", "#b0b0b0"];
+      const backgroundColor = colors[level % colors.length];
+
       if (level <= 1) {
-        return <strong>{text}</strong>;
+        return <strong style={{ backgroundColor }}>{text}</strong>;
       } else if (level % 3 === 0) {
-        return <em>{text}</em>;
+        return <em style={{ backgroundColor }}>{text}</em>;
       } else {
-        return text;
+        return <span style={{ backgroundColor }}>{text}</span>;
       }
     };
 
@@ -53,8 +56,10 @@ function JSONDisplay({ data, level = 0 }) {
     }
     return markup;
   };
+
   return <div>{createMarkup(data)}</div>;
 }
+
 
 
 
