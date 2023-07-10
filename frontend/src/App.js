@@ -92,7 +92,7 @@ function App() {
 
     try {
       // Send a POST request to the backend
-      const response = await axios.post('/api/reverse', { input: input });
+      const response = await axios.post('/api/main', { input: input });
       setResult(response.data.result);
     } catch (error) {
       console.error('Error:', error);

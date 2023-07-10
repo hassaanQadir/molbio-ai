@@ -10,7 +10,7 @@ app = Flask(__name__)
 # Enable Cross Origin Resource Sharing (CORS)
 CORS(app)
 
-@app.route('/reverse', methods=['POST'])
+@app.route('/main', methods=['POST'])
 def process_data():
     """
     Process incoming data, route to be triggered with HTTP POST.
