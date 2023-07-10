@@ -6,7 +6,7 @@ function JSONDisplay({ data, level = 0 }) {
     let markup = [];
 
     const applyFormatting = (text, level) => {
-      if (level <= 1) {
+      if (level === 0) {
         return <strong>{text}</strong>;
       } else if (level % 3 === 0) {
         return <em>{text}</em>;
@@ -20,14 +20,13 @@ function JSONDisplay({ data, level = 0 }) {
         if (typeof value === 'object' && value !== null) {
           markup.push(
             <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${index}:`, level)}
               <JSONDisplay data={value} level={level + 1} />
             </div>
           );
         } else {
           markup.push(
             <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${index}:`, level)} {value}
+              {applyFormatting(value, level)}
             </div>
           );
         }
@@ -39,14 +38,13 @@ function JSONDisplay({ data, level = 0 }) {
         if (typeof value === 'object' && value !== null) {
           markup.push(
             <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${key}:`, level)}
               <JSONDisplay data={value} level={level + 1} />
             </div>
           );
         } else {
           markup.push(
             <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${key}:`, level)} {value}
+              {applyFormatting(value, level)}
             </div>
           );
         }
@@ -58,6 +56,7 @@ function JSONDisplay({ data, level = 0 }) {
 
   return <div>{createMarkup(data)}</div>;
 }
+
 
 
 
