@@ -80,52 +80,26 @@ function App() {
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [loadingMessage, setLoadingMessage] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Pre-defined loading messages
-  const messages = ["Finding a pipette...", "Growing cells...", "Running PCR...", "Engineering new lifeforms...", "Sequencing DNA...", /* ...more messages... */];
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setIsSubmitted(true);
 
-  // Handle loading message updates
-  useEffect(() => {
-    let messageIndex = 0;
-    let intervalId = null;
-
-    // If loading, start a loop to update the loading message every 10 seconds
-    if (isLoading) {
-      intervalId = setInterval(() => {
-        setLoadingMessage(messages[messageIndex % messages.length]);
-        messageIndex += 1;
-      }, 10000);
+    try {
+      // Send a POST request to the backend
+      const response = await axios.post('/api/main', { input: input });
+      setResult(response.data.result);
+    } catch (error) {
+      console.error('Error:', error);
+    } finally {
+      // Stop loading and reset isSubmitted state
+      setIsLoading(false);
+      setIsSubmitted(false);
     }
-
-    // Cleanup function to clear the interval when loading ends
-    return () => {
-      if (intervalId) {
-        clearInterval(intervalId);
-      }
-    };
-  }, [isLoading]);
-
-// Handle form submission
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setIsSubmitted(true);
-
-  try {
-    setIsLoading(true); // Set isLoading to true before making the POST request
-
-    // Send a POST request to the backend
-    const response = await axios.post('/api/main', { input: input });
-    setResult(response.data.result);
-  } catch (error) {
-    console.error('Error:', error);
-  } finally {
-    // Stop loading and reset isSubmitted state
-    setIsLoading(false);
-    setIsSubmitted(false);
-  }
-};
+  };
 
   // Render the component
   return (
@@ -138,7 +112,7 @@ const handleSubmit = async (e) => {
           <button className="App-button" type="submit">{isSubmitted ? 'Submitted' : 'Plan out your bio research project (i.e. "Make glow-in-the-dark E. coli"), start-to-finish, step-by-step, in under 30 seconds'}</button>
         </form>
 
-        {isLoading && <div>{loadingMessage}</div>}
+        {isLoading && <div>Finding a pipette...</div>}
 
         {!isLoading && result && <JSONDisplay data={result} />}
 
@@ -148,3 +122,4 @@ const handleSubmit = async (e) => {
 }
 
 export default App;
+
