@@ -23,32 +23,30 @@ function JSONDisplay({ data, level = 0 }) {
         if (typeof value === 'object' && value !== null) {
           markup.push(
             <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${index}:`, level)}
               <JSONDisplay data={value} level={level + 1} />
             </div>
           );
         } else {
           markup.push(
             <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${index}:`, level)} {value}
+              {applyFormatting(`${value}`, level)}
             </div>
           );
         }
       });
     } else {
-      Object.keys(data).forEach((key, index) => {
+      Object.keys(data).forEach((key) => {
         const value = data[key];
         if (typeof value === 'object' && value !== null) {
           markup.push(
-            <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${key}:`, level)}
+            <div key={key} style={{ paddingLeft: `${level * 20}px` }}>
               <JSONDisplay data={value} level={level + 1} />
             </div>
           );
         } else {
           markup.push(
-            <div key={index} style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${key}:`, level)} {value}
+            <div key={key} style={{ paddingLeft: `${level * 20}px` }}>
+              {applyFormatting(`${value}`, level)}
             </div>
           );
         }
@@ -59,11 +57,6 @@ function JSONDisplay({ data, level = 0 }) {
 
   return <div>{createMarkup(data)}</div>;
 }
-
-
-
-
-
 
 function App() {
 
