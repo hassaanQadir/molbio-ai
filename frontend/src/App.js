@@ -35,14 +35,14 @@ function JSONDisplay({ data, level = 0 }) {
         if (typeof value === 'object' && value !== null) {
           markup.push(
             <div key={index} className="level-container" style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${index}:`, level)}
+              {applyFormatting(`${index}`, level)}
               <JSONDisplay data={value} level={level + 1} />
             </div>
           );
         } else {
           markup.push(
             <div key={index} className="level-container" style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${index}:`, level)} {value}
+              {applyFormatting(`${index}`, level)} {value}
             </div>
           );
         }
@@ -53,14 +53,14 @@ function JSONDisplay({ data, level = 0 }) {
         if (typeof value === 'object' && value !== null) {
           markup.push(
             <div key={index} className="level-container" style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${key}:`, level)}
+              {applyFormatting(`${key}`, level)}
               <JSONDisplay data={value} level={level + 1} />
             </div>
           );
         } else {
           markup.push(
             <div key={index} className="level-container" style={{ paddingLeft: `${level * 20}px` }}>
-              {applyFormatting(`${key}:`, level)} {value}
+              {applyFormatting(`${key}`, level)} {value}
             </div>
           );
         }
